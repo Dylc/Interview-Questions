@@ -4,8 +4,6 @@ List of all interview questions for full stack developer
 
 ## System Design questions
 
-1. Tell me about REST [video](https://www.youtube.com/watch?v=-mN3VyJuCjM)
-
 ## General questions
 
 1. <div dir="rtl">איך היית רוצה להתקדם מבחינה מקצועית</div>
@@ -30,10 +28,14 @@ List of all interview questions for full stack developer
 
 ### Web
 
-1. How one can save data on client side
-2. Post vs Pull
+1. Tell me about REST [video](https://www.youtube.com/watch?v=-mN3VyJuCjM)
+2. Tell me about GraphQl [video](https://www.youtube.com/watch?v=yWzKJPw_VzM)
+3. RestApi vs Graphql [video](https://www.youtube.com/watch?v=yWzKJPw_VzM)
+4. What happens when you type a URL into your browser? [video](https://www.youtube.com/watch?v=AlkDbnbv7dk)
+5. How one can save data on client side
+6. Post vs Pull
 
-## Leetcode questions
+## Leetcode questions (from real interviews)
 
 1. [200. Number of Islands](https://leetcode.com/problems/number-of-islands/) (_medium_) (_WIX_)
 2. [706. Design HashMap](https://leetcode.com/problems/design-hashmap/) (_easy_) (_Similar Web_)
@@ -42,7 +44,6 @@ List of all interview questions for full stack developer
 5. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (_easy_) (_Amazon_)
 6. [520. Detect Capital
    ](https://leetcode.com/problems/detect-capital/description/) - With count of letters. (_easy_) (_Elbit_)
-7.
 
 ### GeekForGeeks Leetcode questions
 
