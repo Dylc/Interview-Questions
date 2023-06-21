@@ -2,33 +2,36 @@
 
 List of all interview questions for full stack developer
 
+## System Design questions
+
+1. Tell me about REST [video](https://www.youtube.com/watch?v=-mN3VyJuCjM)
+
 ## General questions
 
-1. איך היית רוצה להתקדם מבחינה מקצועית
+1. <div dir="rtl">איך היית רוצה להתקדם מבחינה מקצועית</div>
 
 ## JS questions
 
 1. var vs let vs const
-2. what is hoisting
-3. what is prototype
+2. Hoisting
+3. Prototype in js
 
 ### React js
 
-1. להסביר על כל הHOOKS השכיחים ביותר
-2. למה להשתמש בuse state בריאקט ולא בlet
-3. implement useMemo function
-4. what is virtual dom
-5. use callBack
+1. Most common hooks in ReactJs
+2. What will happen if yu use var/let instead of useState
+3. Implement useMemo function
+4. What is virtual dom
+5. What is useCallback, when it's used and why
 
 ### Node js
 
-1. מה תפקיד middelware ב back
+1. What is middleware in Nodejs
 
-### WEB
+### Web
 
-1. כיצד ניתן לשמור נתונים בצד הלקוח
-   מה היתרונות והחסרונות של הנל
-2. Post vs pull
+1. How one can save data on client side
+2. Post vs Pull
 
 ## Leetcode questions
 
@@ -39,6 +42,11 @@ List of all interview questions for full stack developer
 5. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (_easy_) (_Amazon_)
 6. [520. Detect Capital
    ](https://leetcode.com/problems/detect-capital/description/) - With count of letters. (_easy_) (_Elbit_)
+7.
+
+### GeekForGeeks Leetcode questions
+
+1.  Given two unsorted arrays, find all pairs whose sum [link](https://www.geeksforgeeks.org/given-two-unsorted-arrays-find-pairs-whose-sum-x/?ref=ml_lbp)
 
 ## Not-language-related questions
 
