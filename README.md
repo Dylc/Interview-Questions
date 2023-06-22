@@ -4,6 +4,21 @@ List of all interview questions for full stack developer
 
 ## System Design questions
 
+1. Tell me about RESTful API [video](https://www.youtube.com/watch?v=-mN3VyJuCjM)
+2. Tell me about GraphQl [video](https://www.youtube.com/watch?v=yWzKJPw_VzM)
+3. RestApi vs Graphql [video](https://www.youtube.com/watch?v=yWzKJPw_VzM)
+4. What happens when you type a URL into your browser? [video](https://www.youtube.com/watch?v=AlkDbnbv7dk)
+5. How DNS resolution works? [answer](https://serverfault.com/questions/643506/how-does-the-http-get-method-work-in-relation-to-dns-protocol)
+6. DNS over HTTP(S) [answer](https://en.wikipedia.org/wiki/DNS_over_HTTPS)
+7. What is dns-prefetching [answer](https://developer.mozilla.org/en-US/docs/Web/Performance/dns-prefetch)
+8. How to store passwords in the database? [video](https://www.youtube.com/watch?v=zt8Cocdy15c)
+9. Why we need to add salt? Is my password less secure without salt? [answer](https://security.stackexchange.com/questions/100898/why-store-a-salt-along-side-the-hashed-password)
+10. What is pepper? [answer](https://stackoverflow.com/questions/16891729/best-practices-salting-peppering-passwords)
+11. What is CDN? What is Edge Server (Point of presense - not exactly the same)? [answer](https://www.youtube.com/watch?v=RI9np1LWzqw)
+12. How scan to pay works? [video](https://www.youtube.com/watch?v=XS8ACikD2qs)
+13. Where soap is mostly used? [answer](https://www.youtube.com/watch?v=4vLxWqE94l4)
+14. Top 6 Most Popular API Architecture Styles [video](https://www.youtube.com/watch?v=4vLxWqE94l4)
+
 ## General questions
 
 1. <div dir="rtl">איך היית רוצה להתקדם מבחינה מקצועית</div>
@@ -28,12 +43,9 @@ List of all interview questions for full stack developer
 
 ### Web
 
-1. Tell me about REST [video](https://www.youtube.com/watch?v=-mN3VyJuCjM)
-2. Tell me about GraphQl [video](https://www.youtube.com/watch?v=yWzKJPw_VzM)
-3. RestApi vs Graphql [video](https://www.youtube.com/watch?v=yWzKJPw_VzM)
-4. What happens when you type a URL into your browser? [video](https://www.youtube.com/watch?v=AlkDbnbv7dk)
-5. How one can save data on client side
-6. Post vs Pull
+1. How one can save data on client side
+2. Post vs Pull
+3. What the difference between scheme and protocol in URL? [answer](https://stackoverflow.com/a/65756683)
 
 ## Leetcode questions (from real interviews)
 
