@@ -29,6 +29,47 @@ List of all interview questions for full stack developer
 2. Hoisting
 3. Prototype in js
 
+
+### Promises
+
+
+1. What the difference and results
+```js
+new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    throw new Error("Whoops!");
+  }, 1000);
+}).catch(alert);
+```
+
+```js
+new Promise(function(resolve, reject) {
+  setTimeout(() => {
+    reject(new Error("Whoops!"))
+  }, 1000);
+}).catch(alert);
+```
+
+```js
+new Promise(function(resolve, reject) {
+    throw new Error("Whoops!");
+}).catch(alert);
+
+```
+```js
+new Promise(function(resolve, reject) {
+    reject(new Error("Whoops!"))
+}).catch(alert);
+```
+
+<details>
+There’s an "implicit try..catch" around the function code. So all <b>synchronous</b> errors are handled.
+
+But here the error is generated not while the executor is running, but later. So the promise can’t handle it.
+<summary>
+Answer
+</details>
+
 ### React js
 
 1. Most common hooks in ReactJs
