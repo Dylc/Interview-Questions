@@ -71,6 +71,7 @@ Answer
 </details>
 
 
+
 2. The difference between Promise.all vs Promise.allSettled
 3. How to make promisefication of any function?
    <details>
@@ -78,6 +79,32 @@ Answer
    <summary>
    Answer
    </details>
+
+4. Explain the output
+```js
+   
+let promise1 = Promise.resolve();
+let promise2 = Promise.resolve();
+
+promise1
+.then(() => console.log(1))
+.then(() => console.log(2));
+
+promise2
+.then(() => console.log(3))
+.then(() => console.log(4))
+```
+<details>
+promise 1 and promise 2 have console.log(1) and console.log(3) event handlers directly attached, so these two goes into the event queue. after the global code is done executing, console.log(1) handler is first brought back to the call stack to be executed. after it is done, it returns a promise whose handler is console.log(2) it goes to the event queue for now. Next the console.log(3) is brought back from the even queue, and it also returns a promise whose handler i.e. the console.log(4) is stored in the event queue.
+
+Currently console.log(1) and console.log(3) is printed, and the handlers for these promises are (console.log(2), console.log(4)) is stored inside the event queue. Now as there are no global code remaining these two remaining handlers will be executed so the final order become
+
+1,3,2,4
+<summary>
+Answer
+</details>
+
+
 
 ### React js
 
