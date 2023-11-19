@@ -104,7 +104,11 @@ Currently console.log(1) and console.log(3) is printed, and the handlers for the
 Answer
 </details>
 
+### Imports
 
+1. The difference between CommonJS vs ES Imports?
+2. Pros and cons of default vs named exports
+   
 
 ### React js
 
