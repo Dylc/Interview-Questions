@@ -70,6 +70,15 @@ But here the error is generated not while the executor is running, but later. So
 Answer
 </details>
 
+
+2. The difference between Promise.all vs Promise.allSettled
+3. How to make promisefication of any function?
+   <details>
+   https://www.freecodecamp.org/news/write-your-own-promisify-function-from-scratch/
+   <summary>
+   Answer
+   </details>
+
 ### React js
 
 1. Most common hooks in ReactJs
