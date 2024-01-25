@@ -28,6 +28,11 @@ List of all interview questions for full stack developer
 1. var vs let vs const
 2. Hoisting
 3. Prototype in js
+4. Difference between LinkedList and Array in JS [answer](https://stackoverflow.com/questions/18441656/linked-list-vs-array-in-javascript)
+5. What is promise
+6. Explain event loop
+7. Difference between macrotask and microtask [answer](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
+8. 
 
 
 ### Promises
@@ -104,6 +109,32 @@ Currently console.log(1) and console.log(3) is printed, and the handlers for the
 Answer
 </details>
 
+5. Explain the output
+```js
+const tom = () => console.log('Tom');
+const jerry = () => console.log('Jerry');
+const doggy = () => console.log('Doggy');
+const cartoon = () => {
+    console.log('Cartoon');
+    setTimeout(tom, 0);
+    setTimeout(doggy, 0);
+    new Promise((resolve, reject) => {
+        resolve('I am a Promise, right after tom and doggy! Really?');
+    }).then(resolve => {
+        console.log(resolve);
+        setTimeout(() => {
+            console.log('inner timeout')
+        }, 0)
+    });
+    new Promise((resolve, reject) =>
+        resolve('I am a Promise after Promise!')
+    ).then(resolve => console.log(resolve));
+    jerry();
+}
+cartoon();
+```
+
+[answer](https://stackoverflow.com/questions/67983674/macro-task-vs-micro-task)
 ### Imports
 
 1. The difference between CommonJS vs ES Imports?
@@ -117,6 +148,10 @@ Answer
 3. Implement useMemo function
 4. What is virtual dom
 5. What is useCallback, when it's used and why
+6. State vs Props
+7. HOC
+8. What is useRef
+9. 
 
 ### Node js
 
@@ -137,6 +172,10 @@ Answer
 5. [104. Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) (_easy_) (_Amazon_)
 6. [520. Detect Capital
    ](https://leetcode.com/problems/detect-capital/description/) - With count of letters. (_easy_) (_Elbit_)
+7. [490. The Maze](https://leetcode.com/problems/the-maze/description/)(_medium_)(_WIX_)
+8. [2632. Curry](https://leetcode.com/problems/curry/description/?envType=study-plan-v2&envId=30-days-of-javascript)(_medium_)(_WIX_)
+9. [283. Move Zeroes](https://leetcode.com/problems/move-zeroes/description/)(_rebase_)(_WIX_)
+10. 
 
 ### GeekForGeeks Leetcode questions
 
