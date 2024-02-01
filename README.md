@@ -34,6 +34,31 @@ List of all interview questions for full stack developer
 7. Difference between macrotask and microtask [answer](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
 8. 
 
+9. Implement flat js (recursive and loop)
+```js
+// recursive
+var flatten = (ar) => ar.reduce(
+    (flattend, cur) => flattend.concat(
+        Array.isArray(cur) 
+            ? flatten(cur) 
+            : cur
+    ), [])
+
+// loop
+let flatten = (ar) => {
+    let flattend = []
+    while(ar.length){
+        let current = ar.shift()
+        Array.isArray(current) 
+            ? ar.unshift(...current)
+            : flattend.push(current)
+    }
+
+    return flattend
+}
+```
+
+
 
 ### Promises
 
