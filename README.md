@@ -25,16 +25,60 @@ List of all interview questions for full stack developer
 
 ## JS questions
 
-1. var vs let vs const
-2. Hoisting
-3. Prototype in js
-4. Difference between LinkedList and Array in JS [answer](https://stackoverflow.com/questions/18441656/linked-list-vs-array-in-javascript)
-5. What is promise
-6. Explain event loop
-7. Difference between macrotask and microtask [answer](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
-8. 
+1. var vs let vs const. Hositing, scope, declaration 
+2. Why at all we have hoisting. Brandan Eich [said](https://stackoverflow.com/a/59951418) this came as unintended consequence of functional hoisting
+3. Why we have functional hoisting in js? [Because of recusrsive call of functions](https://stackoverflow.com/a/52880419)
+4. ```js
+    let a = "1"
+    if (true) {
+        let a = "2"
+        console.log("a:", a)
+    }
+    console.log("b:", a)
 
-9. Implement flat js (recursive and loop)
+   // output
+   a: 2
+   b: 1
+
+   ////////////////////////////////////////////////
+   let a = "1"
+   if (true) {
+        a = "2"
+        console.log("a:", a)
+   }
+   console.log("b:", a)
+    
+   // output
+   a: 2
+   b: 2
+   
+   ////////////////////////////////////////////////
+   let a = "1"
+   if (true) {
+       console.log("a:", a)
+       let a = "2" 
+   }
+   console.log("b:", a)
+
+   Uncaught ReferenceError: Cannot access 'a' before initialization
+
+   ////////////////////////////////////////////////
+   let a = "1"
+   if (true) {
+        console.log("a:", a)
+        a = "2"  
+   }
+   console.log("b:", a)
+   ```
+6. What is temporal dead zone? [answer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let#temporal_dead_zone_tdz)   
+5. Prototype in js
+6. Difference between LinkedList and Array in JS [answer](https://stackoverflow.com/questions/18441656/linked-list-vs-array-in-javascript)
+7. What is promise
+8. Explain event loop
+9. Difference between macrotask and microtask [answer](https://stackoverflow.com/questions/25915634/difference-between-microtask-and-macrotask-within-an-event-loop-context)
+10. 
+
+11. Implement flat js (recursive and loop)
 ```js
 // recursive
 var flatten = (ar) => ar.reduce(
